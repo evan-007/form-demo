@@ -1,0 +1,10 @@
+<form novalidate ng-submit='goNext()'>
+  <p>
+    <input type="radio" ng-model='choice' value='standard'>I would not like additional options
+  </p>
+  <p>
+    <input type="radio" ng-model='choice' value='custom'>I would like to add printing/numbering
+  </p>
+  <button>Add to cart</button>
+</form>
+<div ui-view></div>

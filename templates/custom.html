@@ -1,0 +1,32 @@
+<form novalidate ng-submit='next()'>
+  <h2>Customize your shirt</h2>
+  <h3>Front</h3>
+  <p>
+    <input type="radio" ng-model='shirt.type' value='none'>None
+  </p>
+  <p>
+    <input type="radio" ng-model='shirt.type' value='name'>Chest Name
+  </p>
+  <p>
+    <input type="radio" ng-model='shirt.type' value='number'>Chest Number
+  </p>
+  <p>
+    <input type="radio" ng-model='shirt.type' value='nameNumber'>Chest Name Over Front Number
+  </p>
+  <div ng-if='shirt.type == "name"'>
+    <hr>
+    <h4>Options</h4>
+    <p>
+      <input type="radio" ng-model='shirt.name.options' value='tackle'>Tackle Twill
+    </p>
+    <p>
+      <input type="radio" ng-model='shirt.name.options' value='vinyl'>Vinyl Heat Press
+    </p>
+    <p>
+      <input type="radio" ng-model='shirt.name.letters' value='straight'>Straight
+    </p>
+    <p>
+      <input type="radio" ng-model='shirt.name.letters' value='arched'>Arched
+    </p>
+  </div>
+</form>
